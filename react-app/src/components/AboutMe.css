@@ -1,0 +1,13 @@
+.outerGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  color: black;
+  background-color: white;
+  /* setting background opacity to 0.8 */
+  opacity: 0.8;
+  border-radius: 20px;
+  padding: 20px;
+}
