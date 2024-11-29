@@ -3,6 +3,7 @@
 import Button from "./components/Button";
 import LandingImage from "./components/LandingImage";
 import AboutMe from "./components/AboutMe";
+import Header from "./components/Header";
 
 function App() {
   // let items = ["New York", "Los Angeles", "Chicago", "Houston", "Paris"];
@@ -20,7 +21,7 @@ function App() {
       /> */}
 
       {/* <Alert>Yo yo yo</Alert> */}
-
+      <Header />
       <LandingImage>
         <AboutMe />
       </LandingImage>

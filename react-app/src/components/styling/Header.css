@@ -1,0 +1,85 @@
+/* In your CSS file, e.g., App.css */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+.nav-bar {
+    background-color: #FDFFE2;
+    padding: 40px;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+}
+
+.nav-bar h1 {
+    font-weight: 500;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 36px;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    display: inline-block;
+    color: black;
+    z-index: 1;
+}
+
+.nav-bar h1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 90%;
+    height: 50%;
+    background-color: white;
+    transform: translate(-30%, -30%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Abril Fatface', cursive;
+    margin-left: 20px;
+    padding: 10px 15px; /* Adjust padding for better click area */
+    position: relative; /* Needed for pseudo-element positioning */
+    border-radius: 10px; /* Rounded corners for pseudo-element */
+    z-index: 1; /* Ensures text stays above the background */
+    transition: color 0.3s; /* Smooth text color transition */
+    padding-right: 80px;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* Align with the top of the link */
+    left: -5%; /* Align with the left of the link */
+    width: 60%; /* Matches the link's width */
+    height: 30%; /* Matches the link's height */
+    background-color: #FFF3C2; /* Background color */
+    z-index: -1; /* Places the pseudo-element behind the text */
+    transition:  /* Add delay for background color */
+        border-radius 0.3s ease 0.1s, /* Smooth border radius transition */
+        top 0.3s ease 0.1s, /* Add delay for position */
+        left 0.3s ease 0.1s,
+        width 0.3s ease 0.1s,
+        height 0.3s ease 0.1s; /* Add delay for all size transitions */; /* Smooth background color transition */
+}
+
+.nav-links a:hover {
+    color: #333; /* Change text color on hover */
+}
+
+.nav-links a:hover::before {
+    top: 0%; /* Align with the top of the link */
+    left: 0%; /* Align with the left of the link */
+    width: 65%; /* Matches the link's width */
+    height: 100%; /* Matches the link's height */
+    border-radius: 10px;
+}
