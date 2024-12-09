@@ -7,6 +7,12 @@
     padding: 40px;
     display: flex;
     align-items: center; /* Vertically center the content */
+    margin-bottom: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .nav-bar h1 {

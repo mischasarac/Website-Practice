@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.container {
+    margin-left: 10%;
+    margin-top: 20px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #D6D6D6;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.1);
+
+    /* Flexbox for alignment */
+    display: flex;
+    flex-direction: row; /* Place items side by side */
+    justify-content: space-between; /* Push items to opposite ends */
+    align-items: center; /* Center items vertically */
+
+    width: 77%;
+    height: 100%;
+}
+
+.description {
+    font-size: 1.2em;
+    text-align: left;
+    width: 45%; /* Adjust width as needed */
+    margin: 30px; /* Add spacing from the left edge */
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.description h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.description p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.skills {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-right: 10px;
+    background-color: #FFF3C2;
+    padding: 1px 20px;
+    border-radius: 8px;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end; /* Align image container to the right */
+    width: 40%; /* Adjust width for image container */
+}
+
+.image img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin: 30px; /* Add spacing from the right edge */
+}
+
+.container:hover {
+    box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    outline-color: rgb(137, 137, 137);
+    transition: box-shadow 0.3s ease,
+                outline-color 0.3s ease; /* Smooth transition for box-shadow */
+}

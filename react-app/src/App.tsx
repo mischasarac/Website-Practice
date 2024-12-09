@@ -1,9 +1,10 @@
 // import ListGroup from "./components/ListGroup";
 // import Alert from "./components/Alert";
-import Button from "./components/Button";
-import LandingImage from "./components/LandingImage";
-import AboutMe from "./components/AboutMe";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Header";
+import Home from "./Home";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
   // let items = ["New York", "Los Angeles", "Chicago", "Houston", "Paris"];
@@ -13,19 +14,16 @@ function App() {
   // };
 
   return (
-    <div>
-      {/* <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      /> */}
-
-      {/* <Alert>Yo yo yo</Alert> */}
-      <Header />
-      <LandingImage>
-        <AboutMe />
-      </LandingImage>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
