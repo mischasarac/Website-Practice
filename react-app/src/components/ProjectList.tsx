@@ -3,6 +3,7 @@ import ProjectContainer from "./ProjectContainer";
 import craterImage from "../assets/Event Crater Detection 2.png";
 import HughMongus from "../assets/Hugh Mongus Hearts.png";
 import MoonwaterGully from "../assets/Moonwater Gully.png";
+import WebsiteImage from "../assets/This website.png";
 
 function ProjectList() {
   const projects = [
@@ -10,9 +11,10 @@ function ProjectList() {
       title: "YOLO Crater Detection",
       description: (
         <>
-          Developed an AI-based model to predict weather patterns using neural
-          networks. This project explored different machine learning algorithms
-          and their effectiveness in forecasting. <br />
+          Researched and applied an AI-based model to automatically detect
+          craters from event camera footage. This project explored different
+          machine learning algorithms and their effectiveness on top of a vast
+          variety of dta processing methods <br />
           <br />
           Tools used include TensorFlow, NumPy, and Pandas.
         </>
@@ -39,30 +41,32 @@ function ProjectList() {
       title: "Farming Game",
       description: (
         <>
-          Created an interactive dashboard for tracking sales and inventory
-          metrics for an online retail store. The project involved creating
-          dynamic charts and integrating real-time updates with REST APIs.{" "}
+          Created an interactive farming game based on Stardew Valley. Worked on
+          designing and modelling character movements in a group setting.
+          Developed skills in organisation and UML design setting group project
+          deadlines to complete all work well before the due date. <br />
           <br />
-          <br />
-          Developed with React, Chart.js, and Express.js.
+          Developed with SFML.
         </>
       ),
       languages: ["C++", "SFML"],
       imageFilePath: MoonwaterGully,
     },
     {
-      title: "Blockchain Voting System",
+      title: "This Website",
       description: (
         <>
-          Built a decentralized voting system using blockchain technology to
-          ensure transparency and immutability. The project included developing
-          a smart contract and integrating it into a web app. <br />
+          Self-taught skills with first react website utilising skills
+          previously learnt on volunteering website. Performed iterative
+          development steps to ensure website quality and scalability remains.
+          Set structured development steps to ensure productive time usage.
           <br />
-          Tools used include Solidity, Web3.js, and Ethereum.
+          <br />
+          Tools used include Figma, Vite, and CSS styling tools.
         </>
       ),
-      languages: ["Solidity", "JavaScript", "Web3.js"],
-      imageFilePath: craterImage,
+      languages: ["React", "TypeScript", "CSS"],
+      imageFilePath: WebsiteImage,
     },
   ];
 

@@ -24,7 +24,7 @@ function AboutMe() {
           <br />
           Currently in my second year, I am seeking{" "}
           <mark>potential internships </mark> for <br />
-          the summer of 2024/2025. <br />
+          the summer of 2025/2026. <br />
         </p>
       </div>
       <SeeWorkButton />

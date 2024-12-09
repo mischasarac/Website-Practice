@@ -19,7 +19,7 @@ function ContactContainer() {
                     <a href="https://github.com/mischasarac" target="_blank" rel="noopener noreferrer">
                         GitHub
                     </a>
-                    <a href="mailto:mischa@example.com">Email</a>
+                    <a href="mailto:mischa@gmail.com">Email</a>
                     <a href="https://www.linkedin.com/in/mischa-sarac-394918258" target="_blank" rel="noopener noreferrer">
                         LinkedIn
                     </a>
